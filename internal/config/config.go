@@ -11,7 +11,7 @@ type Config struct {
 
 func LoadConfig() *Config {
 	return &Config{
-		ServerAddress: getEnv("SERVER_ADDRESS", "localhost:8080"),
+		ServerAddress: getEnv("SERVER_ADDRESS", "back-tire-shop.zeabur.internal:8080"),
 		DatabasePath:  getEnv("DATABASE_PATH", "./database.db"),
 	}
 }
